@@ -37,15 +37,15 @@ module main(CLK, RESET, IOA, IOB, IOC, EN_L, PC, NextPC, Iin, DataA, DataB, Data
     .EN_L(EN_L)
   );
 
-  // BELOW IS THE ONLY LINE YOU SHOULD HAVE TO MODIFY IN THIS FILE
-  lab3iramHRM program2run(
+  // Use an IRAM to test
+  iramHRM program2run(
     .CLK(CLK),
     .RESET(RESET),
     .ADDR(PC),
     .Q(Iin)
   );
-
-  lab3dram memory(
+// The DRAM
+  dram memory(
     .CLK(CLK),
     .RESET(RESET),
     .ADDR(DataD),
