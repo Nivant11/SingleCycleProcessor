@@ -1,3 +1,4 @@
+//This repo does not have anything that generates the clock, we need to create a module that does that and then feed it in here
 module main(CLK, RESET, IOA, IOB, IOC, EN_L, PC, NextPC, Iin, DataA, DataB, DataC, DataD, Din, MW, IOD, IOE, IOF, IOG);
   input         CLK;
   input         RESET;
