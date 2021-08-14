@@ -1,5 +1,4 @@
-module adder(A, B, CI, Y, C, V); // add all inputs and outputs inside parentheses
-
+module adder(A, B, CI, Y, C, V); 
   // inputs
   input [7:0] A;
   input [7:0] B;
