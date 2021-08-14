@@ -11,7 +11,7 @@ module logical(A, B, OP, Y); // add all inputs and outputs inside parentheses
   // reg and internal variable definitions
   
 
-  // implement module here
+  // implementation
 	assign Y[0] = (~OP&(A[0]|B[0]))|(OP&(A[0]&B[0]));
 	assign Y[1] = (~OP&(A[1]|B[1]))|(OP&(A[1]&B[1]));
 	assign Y[2] = (~OP&(A[2]|B[2]))|(OP&(A[2]&B[2]));
