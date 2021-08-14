@@ -1,9 +1,9 @@
 module control(OP, BSEL, CISEL, OSEL, SHIFT_LA, SHIFT_LR, LOGICAL_OP); // add other inputs and outputs here
 
-// inputs (add others here)
+// inputs 
 input [2:0] OP;
 
-// outputs (add others here)
+// outputs 
 output BSEL;
 output CISEL;
 output [1:0] OSEL;
@@ -21,9 +21,6 @@ assign OSEL = (q ? 2'b00 : w ? 2'b01 : e ? 2'b10: q);
 assign SHIFT_LA = (OP==3'b010);
 assign SHIFT_LR = OP[1];
 assign LOGICAL_OP = OP[0];
-
-
-// implement module here (add other control signals below)
 
 
 endmodule
