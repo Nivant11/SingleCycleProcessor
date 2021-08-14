@@ -23,8 +23,7 @@ module alu(A, B, OP, Y, C, V, N, Z, BSEL, CSEL, OSEL, SHIFT_LA, SHIFT_LR, LOGICA
   output LOGICAL_OP;
  
  
-  // ADD YOUR CODE BELOW THIS LINE
-
+ 
 adder add (
 .A(A),
 .B((BSEL) ? ~B : B),
@@ -68,7 +67,6 @@ assign N = (Y[7:4] > 4'b0111);
 assign Z = (Y[7:0]==8'b00000000);
 
 
-  // ADD YOUR CODE ABOVE THIS LINE
-
+ 
 
 endmodule
