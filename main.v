@@ -1,4 +1,4 @@
-module lab3(CLK, RESET, IOA, IOB, IOC, EN_L, PC, NextPC, Iin, DataA, DataB, DataC, DataD, Din, MW, IOD, IOE, IOF, IOG);
+module main(CLK, RESET, IOA, IOB, IOC, EN_L, PC, NextPC, Iin, DataA, DataB, DataC, DataD, Din, MW, IOD, IOE, IOF, IOG);
   input         CLK;
   input         RESET;
   input  [7:0]  IOA;
