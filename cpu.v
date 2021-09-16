@@ -103,7 +103,7 @@ module cpu(CLK, RESET, EN_L, Iin, Din, PC, NextPC, DataA, DataB, DataC, DataD, M
 	.Q(MBResult)
 	);
 	
-	//the alu - DataD is passed from the cpu into the data ram from lab3.v
+	//the alu - DataD is passed from the cpu into the data ram from main.v
 	alu alu(	
 	.A(DataA),
 	.B(MBResult),
@@ -113,7 +113,7 @@ module cpu(CLK, RESET, EN_L, Iin, Din, PC, NextPC, DataA, DataB, DataC, DataD, M
 	.N(N)
 	);	
 	
-	//the MDMux - Din comes from the dram and is wired into cpu.v in lab3.v
+	//the MDMux - Din comes from the dram and is wired into cpu.v in main.v
 	two_to_one_mux MDmux (
 	.S0(DataD),
 	.S1(Din),
